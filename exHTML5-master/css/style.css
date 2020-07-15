@@ -1,5 +1,10 @@
 @import url(./normalize.css);
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+*, 
+*::before, 
+*::after{
+  box-sizing: border-box;
+}
 html{
   font-size: 10px;
 }
@@ -9,4 +14,57 @@ body{
   background-color:#fff;
   font-family: 'spoqa Han Sans';
   font-weight: 700;
+}
+/* 레이아웃 */
+.container{
+  background-color: #fff;
+}
+
+
+.header, .visual, .main, .slogan, .footer{
+  width: 940px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.header{
+  background-color: yellow;
+}
+.visual{
+  background-color: green;
+  height: 120px;
+}
+/* 메인 콘텐츠 */
+.main{
+  background-color: blue;
+  padding: 30px 15px;
+  overflow: hidden;
+  min-height: 450px;
+  
+}
+.group{
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.group1{
+  background-color: pink;
+  width: 250px;
+  float: left;
+}
+.group2{
+  background-color: lightgreen;
+  width: 380;
+}
+.group3{
+  background-color: coral;
+  width: 180px;
+}
+.slogan{
+  background-color: orange;
+}
+.footer-bg{
+  background-color: purple;
+}
+.footer{
+  background-color: skyblue;
 }
