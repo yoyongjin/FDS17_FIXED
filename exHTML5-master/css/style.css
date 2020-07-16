@@ -15,6 +15,15 @@ body{
   font-family: 'spoqa Han Sans';
   font-weight: 700;
 }
+/* 숨김 콘텐츠 */
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
 /* link style */
 a{
   text-decoration: none;
@@ -49,8 +58,8 @@ a{
   position : absolute;
   /* offset을 주지 않으면 원래 자리에 떠있음.
   (static은 offset을 무시함 */
-  top: 45px;
-  left: 65px;
+  top: 26px;
+  left: 60px;
   /* 헤더를 기준으로 바꿔줄꺼임 */
 
 }
@@ -82,11 +91,53 @@ a{
   /* margin: 0 5px; */
 }
 .member a{
- 
   padding: 2px 8px 2px 3px;
   /* 사용자가 클릭하는 크기를 넓게하기 위해 위에서 margin을 주기보다 a에서 padding 선택. */
 }
+
+/* 메인 메뉴 */
+.menu{
   
+  background: #db5629 linear-gradient(to bottom, #ef962f 0%,#db5629 35%,#db5629 70%,#ef9e3b 100%);
+  /* gradient를 지원하지 않는 환경에 대한 대안(단색)  폴백 디자인 -예외상황 고려*/
+  padding: 0;
+  list-style: none;
+  margin: 0 0 50px;
+  padding-left: 225px;
+  /* 일단 로고랑 안겹치게 */
+  border-top: 2px solid #000;
+  border-radius: 0 0 5px 5px;
+}
+.menu::after{
+  content: "";
+  display: block;
+  clear: both;
+  /* clearfix가 없어서 직접 class 만든거 */
+}
+.menu-item{
+  /* li와 함께 하위메뉴의 li도 같이 선택되는 위험성이 있기는 함 
+  굳이 하고싶으면 > 넣으면 됨*/
+  float: left;
+}
+.btn-menu{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.85);
+  /* 0.5 : 반투명한 흰색(투명도 조절) */
+  padding: 15px 20px;
+  cursor: pointer;
+  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+  /* offset x y blur-radius shadow-color */
+}
+.sub-menu{
+  background-color: pink;
+  position: absolute;
+  /* absolute는 영역차지 안함 */
+  display: none;
+}
 
 .visual{
   background-color: green;
