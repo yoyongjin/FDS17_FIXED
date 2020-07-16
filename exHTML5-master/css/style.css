@@ -9,15 +9,20 @@ html{
   font-size: 10px;
 }
 body{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color:#181818; 
   background-color:#fff;
   font-family: 'spoqa Han Sans';
   font-weight: 700;
 }
-/* 레이아웃 */
+/* link style */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/* Layout */
 .container{
-  background-color: #fff;
+  background-color: rgb(136, 125, 125);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -27,9 +32,62 @@ body{
   box-sizing: border-box;
   
 }
+
+
+/* Header */
 .header{
-  background-color: yellow;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 0 30px 0 30px;
+  position: relative;
+  
 }
+
+
+/* Logo */
+.logo{
+  position : absolute;
+  /* offset을 주지 않으면 원래 자리에 떠있음.
+  (static은 offset을 무시함 */
+  top: 45px;
+  left: 65px;
+  /* 헤더를 기준으로 바꿔줄꺼임 */
+
+}
+/* member link */
+.member{
+  
+  list-style: none;
+  /* 글자앞에 기호 사라져라 */
+  padding-left: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: -8px;
+  font-size: 0;
+  text-align: right;
+}
+.member li,
+.member a{
+  display: inline-block;
+}
+.member li{
+  /* 이러면 홈이랑 콜른 사이에 공백문자가 생기는 문제 발생!
+  눈에 보이지 않지만 인라인화 되면서 li상자, 공백상자 이따구로 만들어짐.
+  length찍어보면 5개나와야되는데 9개 나올수가 있음. */
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  /* english -> ENGLISH  모두대문자 */
+}
+.member [aria-hidden]{
+  /* margin: 0 5px; */
+}
+.member a{
+ 
+  padding: 2px 8px 2px 3px;
+  /* 사용자가 클릭하는 크기를 넓게하기 위해 위에서 margin을 주기보다 a에서 padding 선택. */
+}
+  
+
 .visual{
   background-color: green;
   height: 120px;
