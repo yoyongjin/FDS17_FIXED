@@ -10,7 +10,7 @@
       <header class="header">
         <h1 class="logo">
           <a href="">
-            <img src="./images/logo.png">
+            <img src="./images/logo.png" alt="로고">
           </a>
         </h1>
         <ul class="member">
@@ -35,9 +35,9 @@
               <button type="button"
               class=" btn-menu menu-act">HTML에 대해</button>
               <ul class="sub-menu sub-menu1">
-                <li><a .icon-dot-circled:before href="#">HTML5 소개</a></li>
-                <li><a .icon-dot-circled:before href="#">레퍼런스 소개</a></li>
-                <li><a .icon-dot-circled:before href="#"> 활용 예제</a></li>                 
+                <li><a class="icon-dot-circled" href="#">HTML5 소개</a></li>
+                <li><a class="icon-dot-circled" href="#">레퍼런스 소개</a></li>
+                <li><a class="icon-dot-circled" href="#"> 활용 예제</a></li>                 
               </ul>
             </li>
             <li class="menu-item">  
@@ -99,7 +99,29 @@
         </div>
       </div>
       <main class="main clearfix">
-        <div class="group group1">group1</div>
+        <div class="group group1">
+          <section class="login">
+            <h2 class="login-heading">로그인</h2>
+            <form action="https://formspree.io/mwkrwgrg" class="login-form" method="POST">
+              <fieldset>
+                <legend>회원 로그인 폼</legend>
+                <div class="user-email">
+                  <label for="userEmail">아이디</label>
+                  <input type="email" name="userEmail" id="userEmail" placeholder="이메일 주소" required>
+                </div>
+                <div class="user-Pw">
+                  <label for="userEmail">비밀번호</label>
+                  <input type="password" name="userPassword" id="userPw" placeholder="8자리 이상" required>
+                </div>
+                <button class="btn-login" type="submit">로그인</button>
+              </fieldset>
+            </form>
+            <ul class="member-only clearfix">
+              <li> <a href="#">회원가입</a></li>
+              <li> <a href="#">아이디/비밀번호 찾기</a></li>
+            </ul>
+          </section>
+        </div>
         <div class="group group2">group2</div>
         <div class="group group3">group3</div>
       </main>
