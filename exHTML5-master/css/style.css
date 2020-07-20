@@ -304,9 +304,9 @@ left0 ~ right0 */
   background-color: coral;
   width: 190px;
 }
-.clearfix{
-  /* content: "";
-  display: block; */
+.clearfix::after{
+  content: "";
+  display: block;
   clear: both;
 }
 /* 로그인 */
@@ -396,7 +396,6 @@ left0 ~ right0 */
   float: right;
 }
 .member-only a {
-  background-color: yellow;
   padding-top: 5px;
   padding-bottom: 5px;
 }
