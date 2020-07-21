@@ -316,6 +316,7 @@ left0 ~ right0 */
   border-radius: 5px;
   padding: 10px;
   box-shadow: 5px 5px 0 0 #ccc;
+  width: calc(100% - 5px);
 }
 .login-heading{
   margin-top: 0;
@@ -408,6 +409,31 @@ left0 ~ right0 */
   color: #db5629;
 }
 
+/* 유효성 검사 배너 링크 */
+.validation-list{
+  background-color: yellow;
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-left: 0;
+  
+}
+.validation-list a{
+  display: block;
+  padding: 8px 10px 8px 45px;
+  /* line-height: 30px; 이렇게 해도댐 근데 가급적 높이 고정 하지말기.(유연)*/
+  width: 250px;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: #ccc;
+  background-image: url(./images/validation_icon.png), linear-gradient(180deg, #ccc, #eee);
+  background-repeat: no-repeat, repeat;
+  background-position: 15px 50%, 0 0;
+}
+.validation-list a:hover{
+  color: red;
+}
 
 /* 슬로건 */
 .slogan{
