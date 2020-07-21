@@ -36,14 +36,16 @@ a{
 }
 /* Layout */
 .container{
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: center; */
 }
 .header, .visual, .main, .slogan, .footer{
   width: 940px;
   box-sizing: border-box;
-  
+  /* 이건(box-sizing) 왜 강사님꺼엔 없지? */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -51,7 +53,7 @@ a{
 .header{
   background-color: #fff;
   border-radius: 0 0 15px 15px;
-  padding: 0 30px 0 30px;
+  padding: 1px 30px;
   position: relative;
   
 }
@@ -283,25 +285,26 @@ left0 ~ right0 */
 }
 /* 메인 콘텐츠 */
 .main{
-  background-color: blue;
+  background-color:#fff;
   min-height: 450px;
   padding: 30px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  border-radius: 15px 15px 0 0;
 
 }
 .group1{
-  background-color: pink;
+  /* background-color: pink; */
   width: 250px;
 }
 .group2{
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   width: 380px;
 }
 .group3{
-  background-color: coral;
+  /* background-color: coral; */
   width: 190px;
 }
 .clearfix::after{
@@ -411,7 +414,7 @@ left0 ~ right0 */
 
 /* 유효성 검사 배너 링크 */
 .validation-list{
-  background-color: yellow;
+  /* background-color: yellow; */
   list-style: none;
   margin-top: 25px;
   margin-bottom: 0;
@@ -434,6 +437,87 @@ left0 ~ right0 */
 .validation-list a:hover{
   color: red;
 }
+/* 웹 관련 용어 */
+.term{
+  margin-top: 20px;
+  padding: 0 20px;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, #ccc, #eee);
+}
+.term-heading{
+  font-size: ;
+  font-weight: bold;
+}
+odd.term-list{
+}
+.odd.term-list-subject{
+  display: inline;
+  color: #296897;
+}
+.odd.term-list-thumbnail{
+  float: left; 
+  width: 60px;
+  height: 70px;
+  margin: 0 20px 0 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+.odd.term-list-brief{
+  margin-top: 20px;
+}
+.even.term-list-subject, .even.term-list-brief{
+  float: left;
+}
+.even.term-list-thumbnail{
+  float: right;
+}
+
+/* 웹 관련 용어 (비교)*/
+/* .term{
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.term-heading{
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.term-list > div{
+  margin-top: 10px;
+  
+}
+.odd > div::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.term-list-subject, .term-list-brief{
+  background-color: lime;
+  width: 145px;
+  float: right;
+}
+.term-list-subject{
+  color: #296897;
+}
+.term-lest-thumbnail{
+  background-color: orange;
+  margin-left: 0;
+  float: left;
+}
+.term-list-brief{
+  background-color: skyblue;
+  margin-left: 0;
+  margin-top: 5px;
+} */
 
 /* 슬로건 */
 .slogan{
