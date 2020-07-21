@@ -438,7 +438,7 @@ left0 ~ right0 */
   color: red;
 }
 /* 웹 관련 용어 */
-.term{
+/* .term{
   margin-top: 20px;
   padding: 0 20px;
   background-color: #ccc;
@@ -472,52 +472,61 @@ odd.term-list{
 }
 .even.term-list-thumbnail{
   float: right;
-}
+} */
 
 /* 웹 관련 용어 (비교)*/
-/* .term{
+.term {
   background: #ccc linear-gradient(180deg, #ccc, #eee);
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 15px;
   margin-top: 20px;
 }
-.term-heading{
+.term-heading {
   margin: 0;
   font-size: 1.6rem;
   font-weight: 700;
 }
-.term-list{
+.term-list {
   margin-top: 10px;
   margin-bottom: 0;
 }
-.term-list > div{
+.term-list > div {
   margin-top: 10px;
-  
 }
-.odd > div::after{
+.term-list > div::after {
   content: "";
   display: block;
   clear: both;
 }
-.term-list-subject, .term-list-brief{
-  background-color: lime;
+.term-list-subject,
+.term-list-brief {
   width: 145px;
-  float: right;
 }
-.term-list-subject{
+.term-list-subject {
   color: #296897;
 }
-.term-lest-thumbnail{
-  background-color: orange;
+.term-list-thumbnail {
   margin-left: 0;
-  float: left;
 }
-.term-list-brief{
-  background-color: skyblue;
+.term-list-brief {
   margin-left: 0;
   margin-top: 5px;
-} */
+}
+.odd .term-list-subject,
+.odd .term-list-brief {
+  float: right;
+}
+.odd .term-list-thumbnail {
+  float: left;
+}
+.even .term-list-subject,
+.even .term-list-brief {
+  float: left;
+}
+.even .term-list-thumbnail {
+  float: right;
+}
 
 /* 슬로건 */
 .slogan{
