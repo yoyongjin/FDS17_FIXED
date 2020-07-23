@@ -169,6 +169,9 @@ a{
   /* sub-menu가 menu 벗어나서라도 한줄로 */
   /* 줄바꿈 허용하지말기. 강제 개행 금지 */
 }
+.menu-act .sub-menu{
+  display: block;
+}
 .sub-menu li, .sub-menu a{
   display: inline-block;
 }
@@ -201,7 +204,7 @@ left0 ~ right0 */
 .sub-menu a:focus::before{
   content: '\e800';
 }
-.sub-menu1{
+/* .sub-menu1{
   display: block;
 }
 .sub-menu2{
@@ -218,7 +221,7 @@ left0 ~ right0 */
 }
 .sub-menu6{
   display: none;
-}
+} */
 /* 비주얼 */
 @keyframes textAni{
   0%{
@@ -615,20 +618,27 @@ odd.term-list{
 
   /* 공지사항 및 자료실 */
  .board{
-   background-color: yellow;
+   /* background-color: yellow; */
    margin-top: 20px;
    position: relative;
-   min-height: 180px;
+   padding-top: 45px;
    /* 그냥 height도 상관없음 */
 
  } 
  .notice-heading, .pds-heading{
-   background-color: pink;
-   float: left;
+   /* background-color: pink; */
    margin: 0;
    /* h2 agent style */
    font-size: 1.4rem;
    font-weight: 400;
+   position: absolute;
+   top: 0
+ }
+ .notice-heading{
+   left: 0;
+ }
+ .pds-heading{
+   left: 75px;
  }
  .tab{
    color: #666;
@@ -649,18 +659,16 @@ odd.term-list{
 .tab-act .notice-list, .tab-act .pds-list, .tab-act .notice-more, .tab-act .pds-more{
   display: block;
 }
- .notice-list, .pds.list{
-   background-color: silver;
+ .notice-list, .pds-list{
+   /* background-color: silver; */
    list-style: none;
    margin: 0;
    padding-left: 0;
-   position: absolute;
-   top: 45px;
-   left: 0;
-   width: 100%;
+   
+   min-height: 130px;
  }
  .notice-list li, .pds-list li{
-   background-color: orange;
+   /* background-color: orange; */
    margin-top: 10px;
    list-style: none;
    margin-bottom: 10px;
@@ -672,7 +680,7 @@ odd.term-list{
    clear: both;
  }
  .notice-list a, .pds-list a{
-   background-color: skyblue;
+   /* background-color: skyblue; */
    float: left;
    width: 300px;
    text-overflow: ellipsis;
@@ -686,7 +694,7 @@ odd.term-list{
    margin-right: .2em;
  }
  .notice-list time, .pds-list time{
-   background-color: violet;
+   /* background-color: violet; */
    float: right;
  }
  
