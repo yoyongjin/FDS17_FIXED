@@ -644,10 +644,9 @@ odd.term-list{
    background: #fff;
  }
  .notice-list, .pds-list, .notice-more, .pds-more{
-   display: inline;
+   display: none;
  }
-.tab-act.notice-list, .tab-act.pds-list, .tab-act.notice-more, .tab-act.pds-more
-.tab-act{
+.tab-act .notice-list, .tab-act .pds-list, .tab-act .notice-more, .tab-act .pds-more{
   display: block;
 }
  .notice-list, .pds.list{
@@ -664,15 +663,9 @@ odd.term-list{
    background-color: orange;
    margin-top: 10px;
    list-style: none;
-   text-overflow: ellipsis;
    margin-bottom: 10px;
  }
- .notice-list a::before, .pds-list a::before{
-   content: '\f192';
-   font-family: 'fontello';
-   display: inline-block;
-   margin-right: .2em;
- }
+ 
  .notice-list li::after, .pds-list li::after{
    content: "";
    display: block;
@@ -686,13 +679,17 @@ odd.term-list{
    overflow: hidden;
    white-space: nowrap;
  }
+ .notice-list a::before, .pds-list a::before{
+   content: '\f192';
+   font-family: 'fontello';
+   display: inline-block;
+   margin-right: .2em;
+ }
  .notice-list time, .pds-list time{
    background-color: violet;
    float: right;
  }
- .pds-list{
-   background-color: #ddd;
- }
+ 
  .notice-more, .pds-more{
    /* background-color: lime; */
    position: absolute;
