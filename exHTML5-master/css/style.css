@@ -892,9 +892,10 @@ odd.term-list{
   
   text-indent: 1em;
   overflow: hidden;
-  transition-property: height, padding;
-  transition-duration: 1000ms, 2000ms;
-  transition-delay: 0ms, 1000ms;
+  /* transition-property: height, background-color, padding ;
+  transition-duration: 1000ms, 2000ms, 1000ms;
+  transition-delay: 0ms, 1000ms; */
+  transition: all 200ms;
 }
 .related-list li{
   padding: 2px;
