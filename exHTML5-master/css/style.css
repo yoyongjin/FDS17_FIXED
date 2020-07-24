@@ -821,15 +821,15 @@ odd.term-list{
   background: #ccc linear-gradient(180deg, #ccc, #eee);
 }
 .event{
-  background-color: yellow;
+  /* background-color: yellow; */
   border-bottom: 1px solid #aaa;
   position: relative;
 }
-.event-heading{
+.event-heading, .related-heading{
   font-size: 1.6rem;
   margin: 0;
 }
-.event-heading span{
+.event-heading span, .related-heading span{
   color: #db5629;
 }
 .event-thumbnail, .event-brief{
@@ -843,7 +843,7 @@ odd.term-list{
   font-style: normal;
 }
 .btn-wrap{
-  background-color: pink;
+  /* background-color: pink; */
   position: absolute;
   top: 0;
   right: 0;
@@ -875,8 +875,40 @@ odd.term-list{
   overflow: hidden;
 }
 .btn-next{} */
+/* 관련 사이트 */
+.related{
+  margin-top: 10px;
+  
+}
+.related-list{
+  background-color: #fff;
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
 
-
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 25px;
+  
+  text-indent: 1em;
+  overflow: hidden;
+  transition-property: height, padding;
+  transition-duration: 1000ms, 2000ms;
+  transition-delay: 0ms, 1000ms;
+}
+.related-list li{
+  padding: 2px;
+}
+.realted-list a{
+  line-height: 25px;
+  display: block;
+}
+.related-list:hover{
+  height: 127px;
+  padding: 10px 0;
+  
+}
+/* 높이를 준 대상을 찾아가서 호버를 줄 거임 */
 /* 슬로건 */
 .slogan{
   background-color: orange;
