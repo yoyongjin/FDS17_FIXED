@@ -1082,13 +1082,13 @@ odd.term-list{
   content:"";
   width: 100%;
   height: 100%;
-  background: yellow url(./images/coffee.png) no-repeat 0 0 scroll;
+  background:  url(./images/coffee.png) no-repeat 0 0 scroll;
   position: absolute;
   top: 0;
   left: 0;
 }
 .slogan-brief{
-  background-color: red;
+  
   color: #a09784;
   font-size: 1.3rem;
   line-height: 2em;
@@ -1160,3 +1160,51 @@ odd.term-list{
   cursor: pointer;
   
 } */
+.footer{
+ 
+  padding-top: 40px;
+  padding-left: 50px;
+  position: relative;
+}
+.footer-logo{
+  
+  float: left;
+  padding-bottom: 50px;
+  padding-right: 10px;
+}
+.guide-list{
+  background-color: #7b8385;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  width: 675px;
+  padding: 1rem 0;
+  margin-top: -1rem;
+  list-style: none;
+  display: flex;  
+  justify-content: space-evenly;
+}
+.guide-list{
+  
+}
+.address{
+  font-style: normal;
+}
+.address span{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  /* uppercase */
+}
+.copyright{
+  font-size: 1.4rem;
+  display: block;
+}
+.badge{
+  
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.footer-bg{
+  background: #ccc;
+}
