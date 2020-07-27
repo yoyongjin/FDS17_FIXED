@@ -699,7 +699,6 @@ odd.term-list{
    /* background-color: violet; */
    float: right;
  }
- 
  .notice-more, .pds-more{
    /* background-color: lime; */
    position: absolute;
@@ -825,11 +824,11 @@ odd.term-list{
   border-bottom: 1px solid #aaa;
   position: relative;
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .favorite-heading{
   font-size: 1.6rem;
   margin: 0;
 }
-.event-heading span, .related-heading span{
+.event-heading span, .related-heading span .favorite-heading span{
   color: #db5629;
 }
 .event-thumbnail, .event-brief{
@@ -896,6 +895,7 @@ odd.term-list{
   transition-duration: 1000ms, 2000ms, 1000ms;
   transition-delay: 0ms, 1000ms; */
   transition: all 200ms;
+  transition-property: padding height margin;g
 }
 .related-list li{
   padding: 2px;
@@ -910,6 +910,155 @@ odd.term-list{
   
 }
 /* 높이를 준 대상을 찾아가서 호버를 줄 거임 */
+
+/* 인기 사이트 */
+/* .group3.gradient-box:nth-child(2){
+  margin-top: 20px;
+}
+.favorite{
+  background-color: yellow;
+  position: relative;
+}
+
+
+.favorite-list{
+  background-color: yellow;
+  margin: 10px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+} */
+
+/* .favorite-list li{
+  counter-increment: number;
+  margin-top: 5px;
+  background-color: violet;
+  position: relative;
+  
+} */
+/* .favorite-lis li{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  counter-reset: ;
+
+}
+.favorite-list li::before{
+  content: counter(number);
+  padding: 2px 5px;
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 2px;
+  margin-right: 5px;
+  font-size: 1.3rem;
+}  
+.favorite-list a{
+
+}
+.up, .down, .stop{
+  
+  background-color: pink;
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  padding-top: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+.up{
+  background-position: 0 0;
+}
+
+.favorite-more{
+  position: absolute;
+  padding: 8px;
+  top: -8px;
+  right: -8px;
+}
+
+
+.favorite-heading span{
+  color: #db5629;
+} */
+.group3 .gradient-box:nth-child(2) {
+  margin-top: 20px;
+}
+.favorite {
+  position: relative;
+}
+.favorite-list {
+  margin: 10px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* .favorite-list li {
+  counter-increment: number;
+  margin-top: 5px;
+  background-color: violet;
+  position: relative;
+} */
+.favorite-list li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  counter-increment: number;
+  margin-top: 5px;
+}
+.favorite-list li::before {
+  content: counter(number);
+  padding: 2px 5px;
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 2px;
+  margin-right: 5px;
+  font-size: 1.3rem;
+}
+.favorite-list a {
+  flex-grow: 1;
+}
+.up,
+.down,
+.stop {
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  padding-top: 11px;
+  overflow: hidden;
+  /* position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px; */
+}
+.up {
+  background-position: 0 0;
+}
+.stop {
+  background-position: 0 50%;
+}
+.down {
+  background-position: 0 100%;
+}
+
+.favorite-more {
+  position: absolute;
+  padding: 8px;
+  top: -8px;
+  right: -8px;
+}
+
 /* 슬로건 */
 .slogan{
   background-color: orange;
